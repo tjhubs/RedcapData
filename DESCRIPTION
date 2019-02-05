@@ -1,7 +1,8 @@
 Package: RedcapData
 Title: Data management utility support for REDCap repositories
-Version: 1.0.1
+Version: 1.0.5
 Authors@R: "Boniface Makone <bonifacemakone@gmail.com> [aut, cre]"
+Editor@R: "Abraham Lagat <abraham.lagat.k@gmail.com> [aut, cre]"
 Description: This package contains utility and helper functions that support
     data management tasks of REDCap repositories. These tasks include data
     input, formatting, cleaning and error report generation.
@@ -22,9 +23,10 @@ Collate:
     'data_types.R'
     'branching_logic.R'
     'generic_helper.R'
-    'script.R'
-    'redcap_helper.R'
     'redcap_config.R'
     'redcap_config_helper.R'
+    'script.R'
+    'redcap_helper.R'
     'redcap.R'
     'zzz.R'
+RoxygenNote: 6.1.1
