@@ -27,7 +27,7 @@ open_using_default_app = function(file_path) {
   if(Sys.info()["sysname"] == "Windows") { shell.exec(file_path) } else if (Sys.info()["sysname"] == "Linux") 
     { tryCatch({
       file_path <- paste0("\"", file_path, "\"")
-      system(paste("xdg-open", file_path, sep = " "), intern = FALSE)
+      system(paste("gio open", file_path, sep = " "), intern = FALSE)
     } , warning = function(w) warning(w$message) , error = function(e) stop(e$message))
   }  else {
     tryCatch({
